@@ -1,5 +1,7 @@
  const mongoose = require('mongoose')
-const MONGO_URL = "mongodb://127.0.0.1:27017/learingBackend"
+const MONGO_URL = process.env.DB_URL
+require('dotenv').config()
+
 
 
 const connectDB = async()=>{
